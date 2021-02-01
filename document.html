@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <!-- // - Дана textarea.
+// В неё вводится текст.
+// Сделайте так, чтобы после захода на эту страницу через некоторое время, введенный текст остался в textarea. -->
+
+<!-- <textarea id="txt"></textarea> -->
+
+   <!-- // - Дана форма с инпутами, текстареа, чекбоксами, радио кнопочками, селектами и тп.
+// Пользователь вводит какие-то данные и закрывает страницу (не факт, что он заполнил всю форму).
+// Сделайте так, чтобы при следующем заходе на страницу введенные им ранее данные стояли на своих местах.
+// Сделайте ваш скрипт как можно более универсальным. -->
+
+   <!-- <form name  = "form" id = "form" style="width: 100px;" oninput=save(this)>
+      <textarea name="text" id="text" cols="30" rows="10"></textarea>
+      <input type="text" id = "inpText">
+      <input type="number" id = "inpNumber">
+      <input type="checkbox" id = "chek" value = "false">
+      <input type="radio" id = "radio1" name="radio" value = "false">
+      <input type="radio" id = "radio2" name = "radio" value = "false">
+      <select name="select" id="select">
+         <option>item1</option>
+         <option>item2</option>
+         <option>item3</option>
+         <option>item4</option> 
+         <option>item5</option>
+         <option>item6</option>
+      </select>
+   </form> -->
+
+
+   <!-- // -Дан текстареа. В него можно ввести данные, нажать кнопку сохранить и они фикисруются (в хранилище), затем поредактировать их, затем еще поредактировать и возможно еще.....
+// Требование  хранить историю своих изменений (даже после перезагрузки страницы).
+// Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории (не забудьте!чекпоинт истории - нажатеи кнопки сохранить). -->
+
+<!-- 
+<input type="button" value = "left" id = "left">
+<input type="button" value = "right" id = "right">
+<br>
+<textarea name="text" id="txt" cols="30" rows="10"></textarea>
+<br>
+<input type="button" value = "save" id = "save"> -->
+
+
+<!-- // - Реализуйте записную книгу, хранящую данные в локальном хранилище.
+// Данные которые надо сохранять  ФИО, номер, почта, фирма, отдел, день рождения
+// Данные вводить через соответсвующую форму.
+// --Каждому контакту добавить кнопку для удаления контакта.
+// --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть все необходимые инпуты для редактирования, которые уже заполнены данными объекта -->
+
+<form id = "form">
+   <input name ="fio" type="text" placeholder = "ФИО"><br>
+   <input name ="phone" type="tel" placeholder = "номер"><br>
+   <input name ="email" type="text" placeholder = "почта"><br>
+   <input name ="firm" type="text" placeholder = "фирма"><br>
+   <input name ="departament" type="text" placeholder = "отдел"><br>
+   <input name ="data" type="date"><br>
+   <input name ="save" type="submit" value="save">
+</form>
+<div id = "content"></div>
+   <script src="script.js"></script>
+</body>
+
+</html>
